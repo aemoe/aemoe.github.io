@@ -6,14 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://littlemusic.tv">
-  <title>Hexo</title>
+  <title>如何搭建一个全栈框架 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://littlemusic.tv/index.html">
+  <meta name="description" content="也想从头到尾构建一个这样的框架? Well, 我把构建过程尽量详细的写下来  架构对于一个框架, 最重要是架构, 我们如果需要构建一个前后端中间层同构的插件, 就需要在一个文件夹中. 考虑架构时,我为了让前后端所使用的环境相对独立, 前端部分可以单独提取出来进行制作, 也希望后端部分也能更清晰的展现和管理. 我们决定将框架内容分成两大部分, Cliet 和 Server 两个文件夹分别保存.对于前">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何搭建一个全栈框架">
+<meta property="og:url" content="http://littlemusic.tv/2017/05/18/如何搭建一个全栈框架/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="也想从头到尾构建一个这样的框架? Well, 我把构建过程尽量详细的写下来  架构对于一个框架, 最重要是架构, 我们如果需要构建一个前后端中间层同构的插件, 就需要在一个文件夹中. 考虑架构时,我为了让前后端所使用的环境相对独立, 前端部分可以单独提取出来进行制作, 也希望后端部分也能更清晰的展现和管理. 我们决定将框架内容分成两大部分, Cliet 和 Server 两个文件夹分别保存.对于前">
+<meta property="og:image" content="http://littlemusic.tv/2017/05/18/如何搭建一个全栈框架/doc/img/react-lifecycle.png">
+<meta property="og:updated_time" content="2017-05-18T01:48:34.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="如何搭建一个全栈框架">
+<meta name="twitter:description" content="也想从头到尾构建一个这样的框架? Well, 我把构建过程尽量详细的写下来  架构对于一个框架, 最重要是架构, 我们如果需要构建一个前后端中间层同构的插件, 就需要在一个文件夹中. 考虑架构时,我为了让前后端所使用的环境相对独立, 前端部分可以单独提取出来进行制作, 也希望后端部分也能更清晰的展现和管理. 我们决定将框架内容分成两大部分, Cliet 和 Server 两个文件夹分别保存.对于前">
+<meta name="twitter:image" content="http://littlemusic.tv/2017/05/18/如何搭建一个全栈框架/doc/img/react-lifecycle.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -147,16 +153,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-如何搭建一个全栈框架" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-如何搭建一个全栈框架" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/18/如何搭建一个全栈框架/">如何搭建一个全栈框架</a>
+    <h1 class="article-title" itemprop="name">
+      如何搭建一个全栈框架
     </h1>
   
 
@@ -384,22 +388,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/18/如何搭建一个全栈框架/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://littlemusic.tv/2017/05/18/如何搭建一个全栈框架/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
+  
 
 
 
 
   
+  
+  
+
+  
+
   
 
 
@@ -422,8 +479,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
